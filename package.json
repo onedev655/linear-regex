@@ -1,0 +1,19 @@
+{
+  "name": "linear-regex",
+  "version": "1.0.0",
+  "description": "Linear-time regular expression engine based on Thompson NFA simulation, immune to catastrophic backtracking (ReDoS).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "tsx bench/redos.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
